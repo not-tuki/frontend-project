@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSmall Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form method="post">
+
+        <p class="FormName">&nbsp;</p>
+        <div class="MainForm">
+            <div class="ForBlur" id="ForBlur">
+
+            </div>
+
+            <p class="ProductName">Shopping</p>
+            <p class="Cart">Shopping Cart</p>
+
+            <!-- <input class="AddItems" type="button" value="+" onclick="showAddForm()"> -->
+            <table border="0" class="MainTable">
+                <tr>
+                    <td>
+                        <div class="AddItemsForm" id="AddItemsForm">
+                            <table border="0" class="tableInAddItem">
+                                <tr>
+                                    <td>
+                                        <label class="LabelAddProduct" for="txtProductName">Product Name :</label>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" class="inputAddProduct" name="txtProductName"
+                                            id="txtProductName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="LabelAddProduct" for="txtPrice">Price :</label>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="number" class="inputAddProduct" name="txtPrice" id="txtPrice">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="LabelAddProduct" for="txtQty">Qty :</label>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="number" class="inputAddProduct" name="txtQty" id="txtQty">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input class="btnDone" type="button" value="Add To Cart" onclick="pushArray()">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="header"></div>
+                        <div class="ItemsForm"></div>
+                        <table width="97%" class="tblTotal">
+                            <tr>    
+                                <td>
+                                    <input type="submit" value="Clear" class="btnClear" onclick="clearlocalStorage()">
+                                </td>
+                                <td>
+                                    <p class="Totally" id="Totally"> Grand Total : </p>
+                                    <p class="Total" id="Total"> </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
